@@ -1,5 +1,7 @@
-%h1 Photogram
+%div.container
+    %h1 Photogram
 
--@posts.each do |post|
-    =image_tag post.image.url(:medium)
-    =post.caption
+    -@posts.each do |post|
+        %div.post
+            =image_tag post.image.url(:medium)
+            =post.caption
